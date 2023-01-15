@@ -1,8 +1,8 @@
 <template>
   <div id="app">
-    <div class="home  w-screen h-screen bg-red-900">
+    <div class="home w-screen h-screen bg-red-900">
       <div id="mainContainer" class="max-w-md mx-auto min-h-screen bg-red-800 text-white outline-1 outline-dashed">
-        <div id=" heading" class="w-full">
+        <div id="heading" class="w-full">
           <h1 class="mx-auto text-center text-2xl bg-red-900 pt-5 pb-6 text-yellow-300"
             style="font-family: Cambria,'Times New Roman',Times, Cochin, Georgia, STFangsong, 楷体, serif;">NIMOer
             的春节愿望</h1>
@@ -27,7 +27,34 @@ hr {
   margin-bottom: 0.2rem !important;
 }
 
+.wishCard {
+  background-image: url('./assets/cloud.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.btn {
+  background-image: url('./assets/cloud_full.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
 .interRed {
   background-color: #89281f;
+}
+
+p {
+  word-wrap: break-word;
+  word-break: break-all;
+  overflow: hidden;
+}
+
+#heading {
+  background-image: url('./assets/up_boarder.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0% 0%;
 }
 </style>
