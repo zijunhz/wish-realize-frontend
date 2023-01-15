@@ -6,9 +6,9 @@
       <input v-model="wishContent" type="text" class="customInput" placeholder="你的愿望">
       <input v-model="reward" type="text" class="customInput" placeholder="你的回报">
       <button @click="addWish()"
-        class="btn interRed text-yellow w-full mx-auto block border-2 border-dotted rounded-lg py-1 hover:border-solid">wishes.push();</button>
+        class="btn interRed text-yellow w-full mx-auto block border-2 border-dotted rounded-md py-1 hover:border-solid">wishes.push();</button>
       <button @click="backToHomeView()"
-        class="btn interRed mt-2 text-yellow w-full mx-auto block border-2 border-dotted rounded-lg py-1 hover:border-solid">返回愿望队列</button>
+        class="btn interRed mt-2 text-yellow w-full mx-auto block border-2 border-dotted rounded-md py-1 hover:border-solid">返回愿望队列</button>
     </div>
 
   </div>

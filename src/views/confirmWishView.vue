@@ -1,9 +1,9 @@
 <template>
-  <div class="w-full px-2 pt-2">
+  <div class="w-full px-4 pt-2">
     <div v-if="wishCnt === 1">
       <h2 class="text-center mb-2">实现这个愿望🎇</h2>
       <div v-for="wish in wishes" :key="wish.wishID"
-        class="wishCard mb-2 wishContainer outline-dotted outline-1 mx-auto h-fit rounded-lg px-2 py-2">
+        class="wishCard mb-2 wishContainer outline-dotted outline-1 mx-auto h-fit rounded-md px-2 py-2">
         <p>{{ wish.wisher }}的愿望是：</p>
         <p>{{ wish.wishContent }}</p>
         <hr>
@@ -11,13 +11,13 @@
         <p>{{ wish.reward }}</p>
       </div>
       <button @click="confirmWish()"
-        class="btn interRed mt-2 text-yellow w-full mx-auto block border-2 border-dotted rounded-lg py-1 hover:border-solid">实现并折叠愿望</button>
+        class="btn interRed mt-2 text-yellow w-full mx-auto block border-2 border-dotted rounded-md py-1 hover:border-solid">实现并折叠愿望</button>
     </div>
     <div v-if="wishCnt != 1">
       <h2 class="text-center mb-2">这个愿望已被实现或正在入队❌</h2>
     </div>
     <button @click="backToHomeView()"
-      class="btn interRed mt-2 text-yellow w-full mx-auto block border-2 border-dotted rounded-lg py-1 hover:border-solid">返回愿望队列</button>
+      class="btn interRed mt-2 text-yellow w-full mx-auto block border-2 border-dotted rounded-md py-1 hover:border-solid">返回愿望队列</button>
   </div>
 </template>
 

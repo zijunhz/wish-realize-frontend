@@ -3,7 +3,7 @@
     <div class="home w-screen h-screen bg-red-900">
       <div id="mainContainer" class="max-w-md mx-auto min-h-screen bg-red-800 text-white outline-1 outline-dashed">
         <div id="heading" class="w-full">
-          <h1 class="mx-auto text-center text-2xl bg-red-900 pt-5 pb-6 text-yellow-300"
+          <h1 class="mx-auto text-center text-2xl  pt-10 pb-4 text-yellow-300"
             style="font-family: Cambria,'Times New Roman',Times, Cochin, Georgia, STFangsong, 楷体, serif;">
             NIMOer
             的春节愿望</h1>
@@ -52,10 +52,12 @@ p {
   overflow: hidden;
 }
 
-#heading {
-  background-image: url('./assets/up_boarder.png');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 0% 0%;
+#mainContainer {
+  background-image: url('./assets/up_boarder.png'), url('./assets/up_boarder-1.png'), url('./assets/up_boarder-2.png'), url('./assets/up_boarder-3.png');
+  background-size: 60%, 60%, 60%, 60%;
+  background-repeat: no-repeat, no-repeat,
+    no-repeat,
+    no-repeat;
+  background-position: left top, right top, right bottom, left bottom;
 }
 </style>

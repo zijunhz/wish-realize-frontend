@@ -1,15 +1,15 @@
 <template>
   <div class="home">
-    <div id="addNewWishContainer" class="w-full px-2 pt-2">
+    <div id="addNewWishContainer" class="w-full px-4 pt-2">
       <button v-on:click="addNewWish()"
-        class="btn interRed text-yellow w-full mx-auto block border-2 border-dotted rounded-lg py-1 hover:border-solid">新增一个愿望🖊</button>
+        class="btn interRed text-yellow w-full mx-auto block border-2 border-dotted rounded-md py-1 hover:border-solid">新增一个愿望🖊</button>
     </div>
     <p class="text-center my-2">或者，选择你想要为NIMOer实现的愿望</p>
 
-    <div class="wishListContainer px-2">
+    <div class="wishListContainer px-4">
       <div v-for="wish in wishes" :key="wish.wishID" v-on:click="confirm(wish)">
         <div v-if="!wish.isRealized"
-          class="wishCard interRed mb-2 wishContainer border-dotted border-2 mx-auto h-fit rounded-lg px-2 py-2 hover:border-solid">
+          class="wishCard interRed mb-2 wishContainer border-dotted border-2 mx-auto h-fit rounded-md px-2 py-2 hover:border-solid">
           <p>{{ wish.wisher }}的愿望是：</p>
           <p> {{ wish.wishContent }}</p>
           <hr>
@@ -20,10 +20,10 @@
       </div>
     </div>
     <p v-if="hasRealized" class="text-center my-2">以下愿望已经被实现啦 ~</p>
-    <div class="wishListContainer px-2">
+    <div class="wishListContainer px-4">
       <div v-for="wish in wishes" :key="wish.wishID">
         <div v-if="wish.isRealized"
-          class="wishCard mb-2 wishContainer outline-dotted outline-1 mx-auto h-fit rounded-lg px-2 py-2">
+          class="wishCard mb-2 wishContainer outline-dotted outline-1 mx-auto h-fit rounded-md px-2 py-2">
           <p>{{ wish.wisher }}的愿望是：</p>
           <p> {{ wish.wishContent }}</p>
           <hr>
@@ -32,6 +32,7 @@
         </div>
       </div>
     </div>
+    <div class="h-10"></div>
     <!-- <img alt="Vue logo" src="../assets/logo.png">
     <HelloWorld msg="Welcome to Your Vue.js App"/> -->
   </div>
