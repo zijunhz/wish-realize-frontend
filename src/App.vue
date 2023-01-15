@@ -4,7 +4,8 @@
       <div id="mainContainer" class="max-w-md mx-auto min-h-screen bg-red-800 text-white outline-1 outline-dashed">
         <div id="heading" class="w-full">
           <h1 class="mx-auto text-center text-2xl bg-red-900 pt-5 pb-6 text-yellow-300"
-            style="font-family: Cambria,'Times New Roman',Times, Cochin, Georgia, STFangsong, 楷体, serif;">NIMOer
+            style="font-family: Cambria,'Times New Roman',Times, Cochin, Georgia, STFangsong, 楷体, serif;">
+            NIMOer
             的春节愿望</h1>
         </div>
         <router-view />
