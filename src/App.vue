@@ -3,10 +3,11 @@
     <div class="home w-screen h-screen bg-red-900">
       <div id="mainContainer" class="max-w-md mx-auto min-h-screen bg-red-800 text-white outline-1 outline-dashed">
         <div id="heading" class="w-full">
-          <h1 class="mx-auto text-center text-2xl  pt-10 pb-4 text-yellow-300"
+          <img src="./assets/title.png" alt="" class="w-5/6 mx-auto pt-9 mb-3">
+          <!-- <h1 class="mx-auto text-center text-2xl  pt-10 pb-4 text-yellow-300"
             style="font-family: Cambria,'Times New Roman',Times, Cochin, Georgia, STFangsong, 楷体, serif;">
             NIMOer
-            的春节愿望</h1>
+            的春节愿望</h1> -->
         </div>
         <router-view />
       </div>
@@ -19,8 +20,8 @@
 <style lang="scss">
 hr {
   border: none;
-  border-top: 1px dashed #fff;
-  color: #fff;
+  border-top: 1px dashed #f8cccb;
+  color: #f8cccb;
   overflow: visible;
   text-align: center;
   height: 0px;
@@ -33,6 +34,8 @@ hr {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
+  border-color: #f8cccb;
+  outline-color: #f8cccb;
 }
 
 .btn {
