@@ -1,32 +1,33 @@
 <template>
   <div id="app">
-    <nav>
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </nav>
-    <router-view/>
+    <div class="home  w-screen h-screen bg-red-900">
+      <div id="mainContainer" class="max-w-md mx-auto min-h-screen bg-red-800 text-white outline-1 outline-dashed">
+        <div id=" heading" class="w-full">
+          <h1 class="mx-auto text-center text-2xl bg-red-900 pt-5 pb-6 text-yellow-300"
+            style="font-family: Cambria,'Times New Roman',Times, Cochin, Georgia, STFangsong, 楷体, serif;">NIMOer
+            的春节愿望</h1>
+        </div>
+        <router-view />
+      </div>
+      <!-- <img alt="Vue logo" src="../assets/logo.png">
+        <HelloWorld msg="Welcome to Your Vue.js App"/> -->
+    </div>
   </div>
 </template>
 
 <style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+hr {
+  border: none;
+  border-top: 1px dashed #fff;
+  color: #fff;
+  overflow: visible;
   text-align: center;
-  color: #2c3e50;
+  height: 0px;
+  margin-top: 0.2rem !important;
+  margin-bottom: 0.2rem !important;
 }
 
-nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
+.interRed {
+  background-color: #89281f;
 }
 </style>
