@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <div class="home w-screen h-screen bg-red-900">
+    <div class="home w-full min-h-screen bg-red-900">
       <div id="mainContainer" class="max-w-md mx-auto min-h-screen bg-red-800 text-white outline-1 outline-dashed">
         <div id="heading" class="w-full">
           <img src="./assets/title.png" alt="" class="w-5/6 mx-auto pt-9 mb-3">
