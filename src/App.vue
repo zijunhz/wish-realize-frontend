@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <div class="home w-full min-h-screen bg-red-900">
+    <div id="pcBg" class="home w-full min-h-screen bg-red-900">
       <div id="mainContainer" class="max-w-md mx-auto min-h-screen bg-red-800 text-white outline-1 outline-dashed">
         <div id="heading" class="w-full">
           <img src="./assets/title.png" alt="" class="w-5/6 mx-auto pt-9 mb-3">
@@ -62,5 +62,12 @@ p {
     no-repeat,
     no-repeat;
   background-position: left top, right top, right bottom, left bottom;
+}
+
+#pcBg {
+  background-image: url('./assets/Honeyview_cloud2.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 </style>
