@@ -3,7 +3,7 @@
     <div id="pcBg" class="home w-full min-h-screen bg-red-900">
       <div id="mainContainer" class="max-w-md mx-auto min-h-screen bg-red-800 text-white outline-1 outline-dashed">
         <div id="heading" class="w-full">
-          <img src="./assets/title.png" alt="" class="w-5/6 mx-auto pt-9 mb-3">
+          <img src="./assets/Honeyview_title.png" alt="" class="w-5/6 mx-auto pt-9 mb-3">
           <!-- <h1 class="mx-auto text-center text-2xl  pt-10 pb-4 text-yellow-300"
             style="font-family: Cambria,'Times New Roman',Times, Cochin, Georgia, STFangsong, 楷体, serif;">
             NIMOer
