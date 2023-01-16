@@ -4,7 +4,7 @@
       <button v-on:click="addNewWish()"
         class="btn interRed text-yellow w-full mx-auto block border-2 border-dotted rounded-md py-1 hover:border-solid">新增一个愿望🖊</button>
     </div>
-    <p class="text-center my-2">或者，选择你想要为NIMOer实现的愿望</p>
+    <p v-if="hasNotRealized" class="text-center my-2">或者，选择你想要为NIMOer实现的愿望</p>
 
     <div class="wishListContainer px-4">
       <div v-for="wish in wishes" :key="wish.wishID" v-on:click="confirm(wish)">
@@ -52,7 +52,8 @@ export default {
     return {
       wishes: [],
       token: '',
-      hasRealized: false
+      hasRealized: false,
+      hasNotRealized: false
     }
   },
 
@@ -67,6 +68,7 @@ export default {
       }).then((res) => {
         // console.log(res.data)
         this.hasRealized = false
+        this.hasNotRealized = false
         let data = res.data
         let tempWishes = []
         let wishCnt = data['wishCnt']
@@ -74,6 +76,8 @@ export default {
           tempWishes.push({ 'wishID': data[`wishID${i}`], 'wishContent': data[`wishContent${i}`], 'reward': data[`reward${i}`], 'wisher': data[`wisher${i}`], 'isRealized': data[`isRealized${i}`] })
           if (data[`isRealized${i}`]) {
             this.hasRealized = true
+          } else {
+            this.hasNotRealized = true
           }
         }
         this.wishes = tempWishes
