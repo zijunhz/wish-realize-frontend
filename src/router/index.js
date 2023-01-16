@@ -12,21 +12,21 @@ const routes = [
     name: 'home',
     component: HomeView,
     meta: {
-      title: `NIMOers的春节愿望`
+      title: `NIMOer的春节愿望`
     }
   }, {
     path: '/addWishView',
     name: 'addWishView',
     component: addWishView,
     meta: {
-      title: `NIMOers的春节愿望：新增愿望`
+      title: `NIMOer的春节愿望：新增愿望`
     }
   }, {
     path: '/confirmWishView/:wishID',
     name: 'confirmWishView',
     component: confirmWishView,
     meta: {
-      title: `NIMOers的春节愿望：实现愿望`
+      title: `NIMOer的春节愿望：实现愿望`
     }
   }
 ]
