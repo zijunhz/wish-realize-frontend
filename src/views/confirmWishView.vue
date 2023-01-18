@@ -23,6 +23,7 @@
 
 <script>
 import axios from 'axios'
+import { API_BASE } from 'config'
 
 export default {
   name: 'confirmWishView',
@@ -39,7 +40,7 @@ export default {
     confirmWish () {
       axios({
         method: 'get',
-        url: `http://127.0.0.1:8000/wishes/confirmWish/${this.$route.params.wishID}`,
+        url: `${API_BASE}/wishes/confirmWish/${this.$route.params.wishID}`,
       }).then((res) => {
         if (res.data === 'success') {
           alert('已确认实现愿望！')
@@ -52,7 +53,7 @@ export default {
     updateWishes () {
       axios({
         method: 'get',
-        url: `http://127.0.0.1:8000/wishes/getSingleWish/${this.$route.params.wishID}`,
+        url: `${API_BASE}/wishes/getSingleWish/${this.$route.params.wishID}`,
       }).then((res) => {
         // console.log(res.data)
         let data = res.data
@@ -75,7 +76,7 @@ export default {
     getToken () {
       axios({
         method: 'get',
-        url: `http://127.0.0.1:8000/wishes/get_csrf_token`,
+        url: `${API_BASE}/wishes/get_csrf_token`,
         withCredentials: true
       })
         .then((res) => {

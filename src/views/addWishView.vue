@@ -16,6 +16,8 @@
 
 <script>
 import axios from 'axios'
+import { API_BASE } from 'config'
+
 export default {
   name: 'addWishView',
   data () {
@@ -34,7 +36,7 @@ export default {
     getToken () {
       axios({
         method: 'get',
-        url: `http://127.0.0.1:8000/wishes/get_csrf_token`,
+        url: `${API_BASE}/wishes/get_csrf_token`,
         withCredentials: true
       })
         .then((res) => {
@@ -54,7 +56,7 @@ export default {
             'Content-Type': 'application/json',
           },
           withCredentials: true,
-          url: `http://127.0.0.1:8000/wishes/addNewWish/`,
+          url: `${API_BASE}/wishes/addNewWish/`,
           method: 'post',
           data: re,
         }).then((res) => {

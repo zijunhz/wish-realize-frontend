@@ -40,10 +40,8 @@
 </template>
 
 <script>
-// @ is an alias to /src
-// import HelloWorld from '@/components/HelloWorld.vue'
-
 import axios from "axios"
+import { API_BASE } from "config"
 
 export default {
   name: 'HomeView',
@@ -64,7 +62,7 @@ export default {
     updateWishes () {
       axios({
         method: 'get',
-        url: `http://127.0.0.1:8000/wishes/getAllWishes/`,
+        url: `${API_BASE}/wishes/getAllWishes/`,
       }).then((res) => {
         // console.log(res.data)
         this.hasRealized = false
@@ -92,7 +90,7 @@ export default {
     getToken () {
       axios({
         method: 'get',
-        url: `http://127.0.0.1:8000/wishes/get_csrf_token`,
+        url: `${API_BASE}/wishes/get_csrf_token`,
         withCredentials: true
       })
         .then((res) => {
