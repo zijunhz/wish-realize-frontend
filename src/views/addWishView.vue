@@ -16,7 +16,7 @@
 
 <script>
 import axios from 'axios'
-import { API_BASE } from 'config'
+import { API_BASE } from '@/../config'
 
 export default {
   name: 'addWishView',
